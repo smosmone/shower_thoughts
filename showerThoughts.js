@@ -1,5 +1,3 @@
-//function returning message to the user
-
 // Array of random messages
 const messages = [
     "Maybe plants are really farming us, giving us oxygen until we eventually expire and turn into mulch which they can consume",
@@ -74,6 +72,45 @@ const messages = [
     return messages[randomIndex];
   }
   
-  // Generate and display a random message
-  const randomMessage = getRandomMessage();
-  console.log(randomMessage);
+//   // Generate and display a random message with a text based drawing
+//   const randomMessage = getRandomMessage();
+//   console.log(randomMessage);
+
+// Generate and display a random message with a text based drawing
+  function generateRandomMessageAndDrawing() {
+    const randomMessage = getRandomMessage();
+  
+    const drawing = `
+             ______________
+            /              \\ 
+           |                |
+           |   Wooahhhhhh…  |
+           |                |
+            \\______ _______/ 
+                   \\/      
+           | | || |||  ||||| | 
+           | | || |||  ||||| |
+           | | || |||  ||||| |
+           | | ||_______|||| |
+           | |||/|||||||\\||| |
+           | ||/== |/ == \\|| |
+           | || o   \\  o '|| | 
+           | C|.    ..  ‘/D| | 
+           | ||\\    ~   /||| | 
+           | |||\\______/|||| |
+           | ||||||  ||||||| |
+           | ||||/    \\||||| | 
+           | ||||      ||||| |
+    `;
+  
+    return `
+    Shower Thought of the Day: 
+
+    "${randomMessage}"
+  ${drawing}
+  `;
+  }
+  
+  const combinedOutput = generateRandomMessageAndDrawing();
+  console.log(combinedOutput);
+  
