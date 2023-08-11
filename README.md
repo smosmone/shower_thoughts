@@ -7,13 +7,14 @@ This is a portfolio project (Mixed Messages) that is part of Codecademy's Softwa
 It generates a random message containing a different "shower thought" each time the user runs the program. 
 
 ## How to use:
-tbc
+Navigate to the project folder in your command line and run the program with node:
+"node showerThoughts.js" 
 
 ## Technologies:
-tbc
+JavaScript
+Node.js
+Git 
+GitHub
 
 ## Collaborators:
-just me
-
-## License:
-tbc 
+@smosmone (just me)
